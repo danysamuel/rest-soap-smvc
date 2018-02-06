@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="unico" targetNamespace="http://unico.adsoapendpoint" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema elementFormDefault="qualified" targetNamespace="http://unico.adsoapendpoint" xmlns:tns="http://unico.adsoapendpoint" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+
+	<xs:element name="gcd">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="gcdNumber" type="xs:integer"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+
+	<xs:simpleType name="gcdList">
+		<xs:list itemType="xs:integer"/>
+	</xs:simpleType>
+
+
+
+	<xs:element name="gcdSum">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="gcdNumber" type="xs:integer"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>
+  </wsdl:types>
+</wsdl:definitions>
